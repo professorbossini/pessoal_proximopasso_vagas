@@ -20,7 +20,7 @@ header img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   /* em cima e embaixo sem margem. esquerda e direita automático */
   margin: 0 auto;
   padding-left: 16px;
@@ -40,9 +40,18 @@ header img {
 article {
   padding: 12px;
   border: 1px solid #2196F3;
-  width: 380px;
-  float: left;
-  margin-right: 8px;
+  /* removemos as regras width, float e margin daqui */
+  /* ou seja, a princípio, cada vaga ocupa 100% da tela, já que seu display é block */
+}
+
+/* essa é uma media query */
+@media (min-width: 960px){
+  /* adicionamos as regras aqui. Elas são aplicadas de forma condicional */
+  article {
+    width: 30%;
+    float: left;
+    margin-right: 8px;
+  }
 }
 
 article>h2 {
