@@ -19,13 +19,13 @@ header img {
   margin-top: 10px;
 }
 
-.container {
+/* comentamos, ela perde o efeito */
+/* .container {
   width: 100%;
-  /* em cima e embaixo sem margem. esquerda e direita automático */
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-}
+} */
 
 #vagas {
   padding: 80px 0;
