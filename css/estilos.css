@@ -44,15 +44,16 @@ article {
   /* ou seja, a princípio, cada vaga ocupa 100% da tela, já que seu display é block */
 }
 
-/* essa é uma media query */
-@media (min-width: 960px){
-  /* adicionamos as regras aqui. Elas são aplicadas de forma condicional */
+/* apenas comentamos para ilustrar. pode remover
+essa é uma media query
+ @media (min-width: 960px){
+  adicionamos as regras aqui. Elas são aplicadas de forma condicional 
   article {
     width: 30%;
     float: left;
     margin-right: 8px;
   }
-}
+} */
 
 article>h2 {
   background-color: #2196F3;
