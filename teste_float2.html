@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Float - Segundo teste</title>
+	<meta charset="UTF-8">
+	<title>Float - Segundo teste</title>
 </head>
 <style>
-  /* aumentamos o tamanho a fonte */
-  body{
-    font-size: 26px;
-  }
-  /* zeramos a margem do h1 */
-  h1{
-    margin: 0;
-  }
+	/* aumentamos o tamanho a fonte */
+	body{
+		font-size: 26px;
+	}
+	/* zeramos a margem do h1 */
+	h1{
+		margin: 0;
+	}
 
-  article {
-    background-color: aliceblue;
-  }
+	article {
+		background-color: aliceblue;
+	}
 
-  .caixa1, .caixa2 {
-    background-color: beige;
-  }
+	.caixa1, .caixa2 {
+		background-color: beige;
+	}
 
-  .caixa1 {
-    float: left;
-    width: 40%;
-  }
+	.caixa1 {
+		float: left;
+		width: 40%;
+	}
 
-  .caixa2 {
-    float: right;
-    width: 40%;
-  }
+	.caixa2 {
+		float: right;
+		width: 40%;
+	}
 
-  footer {
-    background-color: cornflowerblue;
-  }
-  /* pseudoelemento first-letter de todo p que seja filho direto de um article  */
-  article > p::first-letter {
-    font-size: 80px;
-  }
+	footer {
+		background-color: cornflowerblue;
+	}
+	/* pseudoelemento first-letter de todo p que seja filho direto de um article  */
+	article > p::first-letter {
+		font-size: 80px;
+	}
 
-  h1::before {
-    content: "Título da página: "
-  }
+	h1::before {
+		content: "Título da página: "
+	}
 
-  h1::after {
-    content: " 2022"
-  }
+	h1::after {
+		content: " 2022"
+	}
 
-  article::after {
-    /* nenhum conteúdo */
-    content: "";
-    /* display block*/
-    display: block;
-    /* removendo efeito float */
-    clear: both
+	article::after {
+		/* nenhum conteúdo */
+		content: "";
+		/* display block*/
+		display: block;
+		/* removendo efeito float */
+		clear: both
 
-  }
+	}
 </style>
 <body>
-  <!-- use esse emmet para começar e depois complete-->
-  <!-- article>h1+p.*2 -->
-  <article>
-    <h1>Lorem, ipsum.</h1>
-    <p class="caixa1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, voluptatibus incidunt? Eius fugiat ea perferendis?</p>
-    <p class="caixa2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora sit dolores voluptas quos libero ipsum!</p>
-    <!-- remover ou comentar -->
-    <!-- <div style="clear: both"></div> -->
-  </article>
-  <footer>
-    Lorem ipsum dolor sit amet.
-  </footer>
+	<!-- use esse emmet para começar e depois complete-->
+	<!-- article>h1+p.*2 -->
+	<article>
+		<h1>Lorem, ipsum.</h1>
+		<p class="caixa1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, voluptatibus incidunt? Eius fugiat ea perferendis?</p>
+		<p class="caixa2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora sit dolores voluptas quos libero ipsum!</p>
+		<!-- remover ou comentar -->
+		<!-- <div style="clear: both"></div> -->
+	</article>
+	<footer>
+		Lorem ipsum dolor sit amet.
+	</footer>
 </body>
 </html>

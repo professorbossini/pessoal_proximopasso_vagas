@@ -25,48 +25,55 @@
             <!-- por padrão, ocupa as 12 colunas (mobile first) -->
             <!-- se a tela for pelo menos md, usa apenas 4 -->
             <div class="col-md-4">
-              <article>
-                  <h2>Desenvolvedor Back End</h2>
-                  <div>Salário: <strong>R$6000,00</strong></div>
-                  <ul>
+              <!-- esse é um bloco BEM -->
+              <article class="vaga">
+                <!-- esse é um elemento BEM -->
+                  <h2 class="vaga__cabecalho""">Desenvolvedor Back End</h2>
+                  <!-- elemento BEM -->
+                  <div class="vaga__salario">Salário: <strong>R$6000,00</strong></div>
+                  <!-- elemento BEM -->
+                  <ul class="vaga__prerequisitos">
+                    <!-- selecionaremos como descendente por tipo -->
                       <li>POO</li>
                       <li>Spring Boot</li>
                       <li>Controle de versão</li>
                       <li>Bancos de dados</li>
                   </ul>
-                  <footer>
-                      <a href="candidatar_se.html" class="botao">Candidate-se!</a>
+                  <!-- elemento BEM -->
+                  <footer class="vaga__rodape">
+                    <!-- faça isso nos três botões -->
+                      <a href="candidatar_se.html" class="botao botao--candidatura">Candidate-se!</a>
                   </footer>
               </article>
             </div>
             <div class="col-md-4">
-              <article>
-                  <h2>Desenvolvedor Front End</h2>
-                  <div>Salário: <strong>R$5800,00</strong></div>
-                  <ul>
+              <article class="vaga">
+                  <h2 class="vaga__cabecalho">Desenvolvedor Front End</h2>
+                  <div class="vaga__salario">Salário: <strong>R$5800,00</strong></div>
+                  <ul class="vaga__prerequisitos">
                       <li>HTML</li>
                       <li>CSS</li>
                       <li>Javascript</li>
                       <li>Typescript</li>
                   </ul>
-                  <footer>
-                      <a href="candidatar_se.html" class="botao">Candidate-se!</a>
+                  <footer class="vaga__rodape">
+                      <a href="candidatar_se.html" class="botao botao--candidatura">Candidate-se!</a>
                   </footer>
               </article>
             </div>
             <div class="col-md-4">
               <!-- remover a regra CSS inline margin-right: 0; -->
-              <article>
-                  <h2>Desenvolvedor Full Stack</h2>
-                  <div>Salário: <strong>R$7800,00</strong></div>
-                  <ul>
+              <article class="vaga">
+                  <h2 class="vaga__cabecalho">Desenvolvedor Full Stack</h2>
+                  <div class="vaga__salario">Salário: <strong>R$7800,00</strong></div>
+                  <ul class="vaga__prerequisitos">
                       <li>Spring Boot</li>
                       <li>Angular</li>
                       <li>NodeJS</li>
                       <li>React</li>
                   </ul>
-                  <footer>
-                      <a href="candidatar_se.html" class="botao">Candidate-se!</a>
+                  <footer class="vaga__rodape">
+                      <a href="candidatar_se.html" class="botao botao--candidatura">Candidate-se!</a>
                   </footer>
               </article>
             </div>

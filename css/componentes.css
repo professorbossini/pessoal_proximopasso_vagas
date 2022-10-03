@@ -1,71 +1,89 @@
-article {
+/* article { */
+.vaga{
   padding: 12px;
   border: 1px solid #2196F3;
-  /* removemos as regras width, float e margin daqui */
-  /* ou seja, a princípio, cada vaga ocupa 100% da tela, já que seu display é block */
 }
 
-/* apenas comentamos para ilustrar. pode remover
-essa é uma media query
- @media (min-width: 960px){
-  adicionamos as regras aqui. Elas são aplicadas de forma condicional 
-  article {
-    width: 30%;
-    float: left;
-    margin-right: 8px;
-  }
-} */
-
-article>h2 {
-  background-color: #2196F3;
-  color: #FFF;
-  /* centraliza horizontalmente */
-  text-align: center;
-  /* altura da caixa igual a três vezes a altura da fonte */
-  line-height: 3;
+/* article > h2 { */
+.vaga__cabecalho {
+  /* display e box model */
   margin: -12px;
   margin-bottom: 0;
+
+  /* cores */
+  background-color: #2196F3;
+  color: #FFF;
+
+  /* texto */
+  text-align: center;
+  line-height: 3;
   font-weight: normal;
   font-size: 24px;
 }
 
-article>div {
+/* article > div { */
+.vaga__salario {
+  /* display e box model */
+  margin: 20px 0;
+
+  /* texto */
   text-align: center;
   font-size: 24px;
-  /* 20px superior e inferior. 0 esquerda e direita */
-  margin: 20px 0;
 }
 
-article>ul {
-  list-style: none;
+/* article > ul { */
+.vaga__prerequisitos{
+  /* display e box model */
   padding: 0;
   margin: 20px 0;
+
+  /* outros */
+  list-style: none;
 }
 
-article>ul>li {
+/* article > ul > li { */
+.vaga__prerequisitos > li {
+  /* texto */
   text-align: center;
 }
 
-article>footer {
+/* article>footer { */
+.vaga__rodape {
+  /* texto */
   text-align: center;
 }
 
 .botao {
-  /* elemento inline porém podemos ajustar largura e altura */
+  /* display e box model */
   display: inline-block;
-  /* cor de fundo */
-  background-color: #1976D2;
-  /* cor da fonte */
-  color: white;
-  /* espaço entre o conteúdo e a borda */
   padding: 12px 16px;
-  /* retirando o sublinhado do texto */
+
+  /* cores */
+  background-color: #AAA;
+  color: white;
+
+  /* texto */
   text-decoration: none;
 }
 
+
 .botao:hover, .botao:focus {
-  /* ao receber foco ou quando o mouse passar por cima, fica mais escuro */
-  background-color: #0D47A1;
-  /* por padrão, quando ganha foco, um link mostra bordas. aqui estamos removendo elas. Teste com e sem para ver a diferença. Navegue pelos elementos da página com tab */
+  /* cores */
+  background-color: #777;
+  color: white;
+
+  /* outros */
   outline: none;
+}
+
+/* modificador BEM */
+.botao--candidatura {
+  /* cores */
+  background-color: #1976D2;
+  color: white;
+}
+
+.botao--candidatura:hover, .botao--candidatura:focus {
+  /* cores */
+  background-color: #0D47A1;
 }
