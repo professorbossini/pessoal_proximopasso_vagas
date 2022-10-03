@@ -1,20 +1,24 @@
-header {
+/* header { */
+.leiaute-cabecalho {
   height: 80px;
   border-bottom: 1px solid #CCC;
 }
 
 /* removemos o símbolo > */
-header img {
+/* header img { */
+.leiaute-cabecalho img {
   /* imagem "desce" um pouco dentro do header */
   margin-top: 10px;
 }
 
-#vagas {
+/* #vagas { */
+.leiaute-vagas{
   padding: 80px 0;
 }
 
-#vagas::after {
+/* não vamos precisar mais, já que a responsividade está sob controle do Bootstrap */
+/* #vagas::after {
   content: "";
   display: block;
   clear: both
-}
+} */
