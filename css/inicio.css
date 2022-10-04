@@ -1,13 +1,11 @@
-/* vamos aproveitar e remover essa regra, o Bootstrap já faz isso
-* {
-  box-sizing: border-box;
-} */
-
+html{
+  font-size: 62.5%;
+}
 body {
   /* display e box model */
   margin: 0;
 
   /* texto */
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
 }

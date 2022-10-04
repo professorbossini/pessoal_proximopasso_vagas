@@ -1,10 +1,12 @@
-/* article { */
-.vaga{
+.vaga {
   padding: 12px;
   border: 1px solid #2196F3;
+
+  /* font-size: 14px; */
+  /* font-size: 0.875rem; */
+  font-size: 1.4rem;
 }
 
-/* article > h2 { */
 .vaga__cabecalho {
   /* display e box model */
   margin: -12px;
@@ -18,31 +20,33 @@
   text-align: center;
   line-height: 3;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 2em;
 }
 
-/* article > div { */
 .vaga__salario {
   /* display e box model */
   margin: 20px 0;
 
   /* texto */
   text-align: center;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 2em;
 }
 
-/* article > ul { */
-.vaga__prerequisitos{
+.vaga__prerequisitos {
   /* display e box model */
   padding: 0;
   margin: 20px 0;
+
+  /* texto */
+  font-size: 1em;
 
   /* outros */
   list-style: none;
 }
 
 /* article > ul > li { */
-.vaga__prerequisitos > li {
+.vaga__prerequisitos>li {
   /* texto */
   text-align: center;
 }
@@ -56,18 +60,20 @@
 .botao {
   /* display e box model */
   display: inline-block;
-  padding: 12px 16px;
+  padding: 0.8em 1.2em;
 
   /* cores */
   background-color: #AAA;
   color: white;
 
   /* texto */
+  font-size: 1em;
   text-decoration: none;
 }
 
 
-.botao:hover, .botao:focus {
+.botao:hover,
+.botao:focus {
   /* cores */
   background-color: #777;
   color: white;
@@ -83,7 +89,8 @@
   color: white;
 }
 
-.botao--candidatura:hover, .botao--candidatura:focus {
+.botao--candidatura:hover,
+.botao--candidatura:focus {
   /* cores */
   background-color: #0D47A1;
 }
